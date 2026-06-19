@@ -2,7 +2,7 @@
 cmds = ["npm install --production --no-fund --no-audit"]
 
 [phases.build]
-cmds = []
+cmds = ["echo 'Build skipped - dist/ already compiled'"]
 
 [start]
 cmd = "node dist/index.js"
